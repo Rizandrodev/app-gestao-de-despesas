@@ -7,6 +7,6 @@ router.get("/", ExpenseController.getAllExpenses);
 router.get("/filter", ExpenseController.getExpensesByDateRange);
 router.post("/", ExpenseController.addExpense);
 router.delete("/:id", ExpenseController.deleteExpense);
-router.delete("/", ExpenseController.delete);
+router.delete("/", ExpenseController.deleteAll);
 
 export default router;

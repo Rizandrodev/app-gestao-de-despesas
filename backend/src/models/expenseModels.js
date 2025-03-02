@@ -37,10 +37,11 @@ class ExpenseModel {
     await db.run("DELETE FROM expenses WHERE id = ?", [id]);
   }
 
-  static async deleteAll(){
-    const db=await initDB()
-    await db.run("DELETE FROM expenses")
+  static async deleteAll() {
+    const db = await initDB();
+    await db.run("DELETE FROM expenses");
   }
+
 }
 
 export default ExpenseModel;
